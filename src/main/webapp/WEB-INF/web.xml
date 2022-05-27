@@ -36,4 +36,20 @@
   <session-config>
   	<session-timeout>15</session-timeout>
   </session-config>
+  
+  <!-- 한글깨짐에 대한 필터설정 :현재 개발중인 웹 애플리케이션 -->
+    <filter>
+    <filter-name>SetCharEncoding</filter-name>
+    <filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
+      <init-param>
+        <param-name>encoding</param-name>
+        <param-value>utf-8</param-value>
+      </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>SetCharEncoding</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  
 </web-app>
