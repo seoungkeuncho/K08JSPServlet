@@ -29,7 +29,7 @@
 
     <h3>setProperty 액션 태그로 자바빈즈 속성 지정하기</h3>
     <!-- DTO 객체의 setter()메서드를 이용해서 값을 설정한다. -->
-    <jsp:setProperty name="person" property="name" value="임꺽정" /> 
+    <jsp:setProperty name="person" property="name1" value="임꺽정" /> 
     <jsp:setProperty name="person" property="age" value="41" /> 
 
     <h3>getProperty 액션 태그로 자바빈즈 속성 읽기</h3>

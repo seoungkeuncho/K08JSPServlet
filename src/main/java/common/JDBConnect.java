@@ -49,6 +49,20 @@ public class JDBConnect {
 			e.printStackTrace();
 			}
 	}
+	// MembershipDAO 인자생성자.
+	public JDBConnect(String driver,String url ,String id, String pw ,String name , String gender , String birth , String address , String email ,String mobile) {
+		try {
+			//JDBC드라이버 로드.
+			Class.forName(driver);
+			//DB에 연결
+			con =DriverManager.getConnection(url,id,pw);
+			System.out.println("DB연결 성공(인수 생성자 1)");
+		
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+			}
+	}
 	//인자 생성자 2
 		public JDBConnect(ServletContext application) {
 			try {
