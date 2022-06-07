@@ -13,6 +13,22 @@ public class MembershipDTO {
 	private String telnum;
 	private String regidate;
 	
+	public MembershipDTO(String num, String id, String pass, String name, String gender, String birthday,
+			String address, String emailnum, String mobilenum, String telnum, String regidate) {
+		super();
+		this.num = num;
+		this.id = id;
+		this.pass = pass;
+		this.name = name;
+		this.gender = gender;
+		this.birthday = birthday;
+		this.address = address;
+		this.emailnum = emailnum;
+		this.mobilenum = mobilenum;
+		this.telnum = telnum;
+		this.regidate = regidate;
+	}
+
 	public MembershipDTO() {
 	}
 

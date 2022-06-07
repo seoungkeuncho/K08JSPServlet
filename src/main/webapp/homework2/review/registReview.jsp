@@ -29,7 +29,7 @@
 	}
 	</script>	
 	<h2>회원가입폼</h2>
-	<form name="registFrm" method="전송방식" action="전송할url" onsubmit="이벤트리스너">
+	<form name="registFrm">
 		우편번호 : <input type="text" name="zipcode" onclick="zipcodeFind();" />
 		<input type="button" value="우편번호검색" onclick="zipcodeFind();" />
 		<br />
